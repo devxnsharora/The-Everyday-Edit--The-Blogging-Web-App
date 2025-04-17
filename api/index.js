@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-const mongoUri = 'mongodb+srv://Devansh:Devansh%4012345@cluster0.jndajah.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoUri = 'mongodb+srv://Devansh:<Password>cluster0.jndajah.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(mongoUri);
 const db = mongoose.connection;
